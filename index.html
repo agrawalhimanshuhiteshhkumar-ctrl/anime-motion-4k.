@@ -1,21 +1,552 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090910">
-<title>Anime Motion 4K — Animated Wallpaper Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Motion 4K</title>
+
 <style>
-:root{--bg:#08080e;--panel:#11111b;--panel2:#171725;--line:#29283d;--text:#f4f2ff;--muted:#a4a2bb;--purple:#a855f7;--blue:#45caff;--pink:#ff4fc8}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#24103e 0,transparent 36%),radial-gradient(ellipse at 0% 40%,#0d2138 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1250px;margin:auto;padding:0 22px}.top{position:sticky;top:0;z-index:5;background:#08080edb;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}.nav{height:76px;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.6px;font-size:19px;white-space:nowrap}.logo{height:38px;width:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),#4168ff);box-shadow:0 0 28px #a855f755;font-size:20px}.brand span{color:#c99aff}.search{margin-left:auto;position:relative;max-width:390px;flex:1}.search input{width:100%;background:#151520;border:1px solid var(--line);border-radius:13px;padding:12px 14px 12px 40px;color:white;outline:none}.search input:focus{border-color:#a855f7}.search i{position:absolute;left:14px;top:11px;color:var(--muted);font-style:normal}.btn{border:1px solid #a855f77a;color:white;background:linear-gradient(135deg,#8b35dc,#5145d9);border-radius:12px;padding:11px 15px;font-weight:750;box-shadow:0 5px 22px #7c3aed24}.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}.btn.secondary{background:#171725;border-color:var(--line);box-shadow:none}.hero{padding:58px 0 30px;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #a855f755;background:#a855f716;color:#d5b2ff;padding:7px 11px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.dot{height:7px;width:7px;background:#54f6b0;border-radius:50%;box-shadow:0 0 12px #54f6b0}.hero h1{font-size:clamp(38px,6vw,69px);line-height:.99;letter-spacing:-3px;margin:20px 0 18px}.gradient{background:linear-gradient(90deg,#fff 0%,#d5a4ff 44%,#58d6ff 100%);color:transparent;background-clip:text}.hero p{color:var(--muted);line-height:1.7;max-width:590px;font-size:16px}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}.hero-visual{min-height:270px;border:1px solid #8d5cff55;border-radius:24px;background:linear-gradient(145deg,#21133a,#101c36 55%,#090910);position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:inset 0 0 55px #8148f51a,0 20px 70px #0005}.orbit{position:absolute;width:245px;height:245px;border:1px solid #a855f744;border-radius:50%;box-shadow:0 0 70px #a855f71c,inset 0 0 45px #45caff12;animation:spin 18s linear infinite}.orbit:before,.orbit:after{content:'';position:absolute;border:1px solid #45caff55;border-radius:50%;inset:22px}.orbit:after{inset:47px;border-color:#ff4fc855}@keyframes spin{to{transform:rotate(360deg)}}.hero-symbol{font-size:86px;z-index:1;filter:drop-shadow(0 0 28px #a855f7);animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-10px) scale(1.04)}}.visual-label{position:absolute;bottom:16px;left:17px;right:17px;display:flex;justify-content:space-between;color:#ddd7f7;font-size:11px;letter-spacing:1.5px;font-weight:800}.stats{display:flex;gap:25px;margin-top:25px}.stat strong{display:block;font-size:21px}.stat small{color:var(--muted);font-size:12px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:24px 0 18px}.section-head h2{margin:0;font-size:24px;letter-spacing:-.7px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}.chips{display:flex;gap:9px;overflow-x:auto;padding:2px 0 17px;scrollbar-width:none}.chip{white-space:nowrap;border:1px solid var(--line);background:#11111b;color:#b9b6d0;border-radius:99px;padding:9px 15px;font-size:13px;font-weight:700}.chip.active,.chip:hover{color:white;background:#762edb30;border-color:#a855f7}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;padding-bottom:30px}.card{background:linear-gradient(160deg,#171725,#101019);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#8b5cf688;box-shadow:0 15px 38px #0005}.preview{height:215px;position:relative;background:radial-gradient(ellipse at 50% 40%,#392052,#101326 68%,#08080e);overflow:hidden;display:grid;place-items:center}.preview video{width:100%;height:100%;object-fit:cover;background:#08080e}.playhint{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}.playhint span{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;background:#08080eaa;border:1px solid #ffffff55;backdrop-filter:blur(8px);font-size:18px}.tag{position:absolute;left:12px;top:12px;background:#08080ed9;border:1px solid #ffffff20;border-radius:8px;padding:6px 8px;font-size:10px;letter-spacing:.8px;font-weight:900}.quality{position:absolute;right:12px;top:12px;background:#a855f7d9;border-radius:8px;padding:6px 8px;font-size:10px;font-weight:900}.cardbody{padding:15px}.cardtitle{font-weight:800;font-size:15px;overflow-wrap:anywhere}.meta{color:var(--muted);font-size:12px;margin-top:5px}.cardactions{display:flex;gap:8px;margin-top:14px}.cardactions button{flex:1;padding:9px 10px;border-radius:10px;font-size:12px;font-weight:800}.download{background:#a855f71c;border:1px solid #a855f766;color:#e8d6ff}.remove{background:#1a1a27;border:1px solid var(--line);color:#c6c3d7}.empty{border:1px dashed #51416e;background:#11111b99;border-radius:20px;padding:35px 20px;text-align:center;grid-column:1/-1}.emptyicon{font-size:35px}.empty h3{margin:12px 0 7px}.empty p{max-width:480px;margin:0 auto 18px;color:var(--muted);font-size:13px;line-height:1.65}.uploadpanel{display:none;background:#11111b;border:1px solid #7c3aed66;border-radius:20px;padding:22px;margin:15px 0 28px;box-shadow:0 15px 45px #0004}.uploadpanel.open{display:block}.uploadpanel h3{margin:0 0 6px}.uploadpanel p{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}.formgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.field label{display:block;color:#c7c3d9;font-size:12px;font-weight:750;margin-bottom:7px}.field input,.field select{width:100%;background:#090910;color:white;border:1px solid var(--line);border-radius:10px;padding:11px;outline:none}.field input[type=file]{font-size:12px}.formfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px}.note{font-size:11px;color:var(--muted);line-height:1.5}.footer{border-top:1px solid #ffffff12;padding:24px 0 35px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#20172d;border:1px solid #a855f7;color:white;padding:12px 16px;border-radius:12px;z-index:20;transition:.25s;max-width:90%;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}.modal{display:none;position:fixed;inset:0;background:#000d;z-index:15;padding:20px;place-items:center}.modal.open{display:grid}.modalbox{width:min(900px,100%);background:#101019;border:1px solid var(--line);border-radius:18px;overflow:hidden}.modalbar{display:flex;align-items:center;justify-content:space-between;padding:12px 15px}.modalbar button{background:#252536;color:white;border:0;border-radius:8px;padding:8px 12px}.modal video{display:block;width:100%;max-height:75vh;background:#000}.hidden{display:none!important}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:40px}.hero-visual{min-height:220px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.formgrid{grid-template-columns:1fr 1fr}.nav{gap:10px}.brand{font-size:16px}.search{max-width:none}}
-@media(max-width:540px){.wrap{padding:0 14px}.nav{height:66px;flex-wrap:wrap}.brand{font-size:14px;gap:7px}.logo{width:32px;height:32px}.search{order:3;flex-basis:100%;max-width:none;margin:0 0 12px}.top{position:relative}.nav{height:auto;padding:12px 0;flex-wrap:wrap}.nav>.btn{margin-left:auto;padding:9px 10px;font-size:12px}.hero{padding-top:30px;gap:20px}.hero h1{letter-spacing:-1.8px}.hero-visual{min-height:190px}.hero-symbol{font-size:65px}.stats{gap:18px}.stat strong{font-size:18px}.grid{grid-template-columns:1fr;gap:13px}.preview{height:230px}.formgrid{grid-template-columns:1fr}.section-head h2{font-size:21px}.footer{display:block}.footer span{display:block;margin-top:8px}}
-</style></head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090b12;
+  color: #f4f4f8;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #202333;
+  position: sticky;
+  top: 0;
+  background: rgba(9,11,18,.95);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #a78bfa;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  padding: 90px 8%;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 0%, #34235a 0%, transparent 60%),
+    #090b12;
+}
+
+.hero small {
+  color: #bba5ff;
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  margin: 20px 0;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: #ad91ff;
+}
+
+.hero p {
+  color: #a5a5b4;
+  line-height: 1.7;
+}
+
+.search {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.search input {
+  width: 100%;
+  padding: 16px 20px;
+  background: #151824;
+  border: 1px solid #34364a;
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.search input:focus {
+  border-color: #a78bfa;
+}
+
+main {
+  padding: 35px 7%;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.categories button {
+  padding: 10px 17px;
+  border: 1px solid #292d40;
+  border-radius: 30px;
+  background: #121522;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.categories button.active,
+.categories button:hover {
+  background: #a78bfa;
+  color: #090b12;
+  border-color: #a78bfa;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 23px;
+}
+
+.card {
+  background: #121522;
+  border: 1px solid #252a3a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #8e74d8;
+}
+
+.art {
+  height: 290px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.art::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.13);
+  filter: blur(5px);
+}
+
+.art span {
+  z-index: 1;
+  font-size: 27px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 5px 25px #000;
+}
+
+.card-info {
+  padding: 17px;
+}
+
+.card-info h3 {
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.card-info p {
+  color: #85899a;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 9px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 11px 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.preview {
+  background: #272b3d;
+  color: white;
+}
+
+.download {
+  background: #a78bfa;
+  color: #090b12;
+}
+
+.actions button:hover {
+  opacity: .8;
+}
+
+.empty {
+  display: none;
+  text-align: center;
+  color: #aaa;
+  padding: 50px;
+  grid-column: 1/-1;
+}
+
+footer {
+  margin-top: 70px;
+  padding: 35px 15px;
+  text-align: center;
+  border-top: 1px solid #222638;
+  color: #777d90;
+  line-height: 2;
+}
+
+footer strong {
+  color: #c2adff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #171a28;
+  border: 1px solid #39344e;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: min(400px,100%);
+}
+
+.modal-art {
+  min-height: 230px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: var(--bg);
+}
+
+.modal button {
+  padding: 11px 20px;
+  background: #a78bfa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media(max-width:600px) {
+  header { padding: 18px 5%; }
+  nav a { margin-left: 10px; font-size: 12px; }
+  .hero { padding: 65px 5%; }
+  main { padding: 30px 5%; }
+  .gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+  .art { height: 210px; }
+  .card-info { padding: 12px; }
+  .actions button { font-size: 11px; }
+}
+</style>
+</head>
+
 <body>
-<header class="top"><div class="wrap nav"><div class="brand"><div class="logo">✦</div><div>ANIME <span>MOTION</span> 4K</div></div><div class="search"><i>⌕</i><input id="search" placeholder="Search anime or character…" aria-label="Search wallpapers"></div><button class="btn" id="openUpload">＋ Add wallpaper</button></div></header>
-<main class="wrap">
-<section class="hero"><div><div class="eyebrow"><span class="dot"></span> THE ANIMATED WALLPAPER HUB</div><h1>Feel the <span class="gradient">motion.</span><br>Set the vibe.</h1><p>Discover your next anime live wallpaper. Preview real video motion, find your favorite characters, and download clips to use with a compatible live-wallpaper app.</p><div class="hero-actions"><button class="btn" id="explore">Explore wallpapers ↓</button><button class="btn secondary" id="heroUpload">Upload your video ↗</button></div><div class="stats"><div class="stat"><strong id="wallCount">0</strong><small>Wallpapers added</small></div><div class="stat"><strong>HD+</strong><small>Video-ready gallery</small></div><div class="stat"><strong>Free</strong><small>No account needed</small></div></div></div><div class="hero-visual"><div class="orbit"></div><div class="hero-symbol">✦</div><div class="visual-label"><span>ANIME IN MOTION</span><span>MP4 / WEBM / GIF</span></div></div></section>
-<section id="gallery"><div class="section-head"><div><h2>Explore the gallery</h2><p>Only videos you add appear here as real animated previews.</p></div></div><div class="chips" id="chips"><button class="chip active" data-cat="All Anime">✦ All Anime</button><button class="chip" data-cat="Naruto">Naruto</button><button class="chip" data-cat="Jujutsu Kaisen">Jujutsu Kaisen</button><button class="chip" data-cat="One Piece">One Piece</button><button class="chip" data-cat="Dragon Ball">Dragon Ball</button><button class="chip" data-cat="Bleach">Bleach</button><button class="chip" data-cat="Demon Slayer">Demon Slayer</button><button class="chip" data-cat="Other">Other</button></div><div class="grid" id="grid"><div class="empty"><div class="emptyicon">🎞️</div><h3>Your motion gallery starts here</h3><p>No videos have been added yet. Add an MP4, WebM, or GIF file to create a real moving wallpaper card. Static images won't be presented as animation.</p><button class="btn" id="emptyUpload">＋ Add your first video</button></div></div></section>
-<section class="uploadpanel" id="uploadPanel"><h3>＋ Add an animated wallpaper</h3><p>Choose a genuine video or GIF from your device. The preview and download will use that exact file.</p><form id="uploadForm"><div class="formgrid"><div class="field"><label for="wallTitle">Wallpaper title</label><input id="wallTitle" required maxlength="80" placeholder="e.g. Gojo — Blue Aura"></div><div class="field"><label for="wallAnime">Anime category</label><select id="wallAnime"><option>Naruto</option><option>Jujutsu Kaisen</option><option>One Piece</option><option>Dragon Ball</option><option>Bleach</option><option>Demon Slayer</option><option>Other</option></select></div><div class="field"><label for="wallFile">Video file (MP4, WebM, GIF)</label><input id="wallFile" type="file" accept="video/mp4,video/webm,video/quicktime,image/gif,.mp4,.webm,.mov,.gif" required></div></div><div class="formfoot"><span class="note">Local prototype: files are kept in this page session, not uploaded to a server. Refreshing the page clears the gallery.</span><button class="btn" type="submit">Add to gallery ↗</button></div></form></section>
-<footer class="footer"><div>✦ <b>Anime Motion 4K</b> <span>— made for anime fans.</span></div><span>Use videos you own or have permission to share. Wallpaper playback depends on your device/app.</span></footer>
-</main><div class="toast" id="toast"></div><div class="modal" id="modal"><div class="modalbox"><div class="modalbar"><strong id="modalTitle">Wallpaper preview</strong><button id="closeModal">✕ Close</button></div><video id="modalVideo" controls autoplay loop playsinline></video></div></div>
+
+<header>
+  <div class="logo">ANIME <span>MOTION 4K</span></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#gallery">Wallpapers</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <small>THE ULTIMATE ANIME COLLECTION</small>
+  <h1>Beyond <span>Reality.</span></h1>
+  <p>Discover beautiful anime-inspired wallpapers<br>
+  made for your screen.</p>
+
+  <div class="search">
+    <input id="search" type="search"
+      placeholder="Search your favourite wallpaper...">
+  </div>
+</section>
+
+<main id="gallery">
+
+  <div class="section-title">
+    <h2>Explore Wallpapers</h2>
+  </div>
+
+  <div class="categories">
+    <button class="active" onclick="filter('All',this)">All</button>
+    <button onclick="filter('Action',this)">Action</button>
+    <button onclick="filter('Dark',this)">Dark</button>
+    <button onclick="filter('Cosmic',this)">Cosmic</button>
+    <button onclick="filter('Nature',this)">Nature</button>
+  </div>
+
+  <div class="gallery" id="galleryGrid">
+
+    <div class="card" data-name="Shadow Warrior" data-category="Dark">
+      <div class="art" style="--bg:linear-gradient(145deg,#15162d,#53346d,#111)">
+        <span>SHADOW<br>WARRIOR</span>
+      </div>
+      <div class="card-info">
+        <h3>Shadow Warrior</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Crimson Energy" data-category="Action">
+      <div class="art" style="--bg:linear-gradient(145deg,#260d18,#b32d48,#150b1b)">
+        <span>CRIMSON<br>ENERGY</span>
+      </div>
+      <div class="card-info">
+        <h3>Crimson Energy</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Cosmic Soul" data-category="Cosmic">
+      <div class="art" style="--bg:linear-gradient(145deg,#071c3b,#4933a0,#090b20)">
+        <span>COSMIC<br>SOUL</span>
+      </div>
+      <div class="card-info">
+        <h3>Cosmic Soul</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Eternal Flame" data-category="Action">
+      <div class="art" style="--bg:linear-gradient(145deg,#321407,#d66b25,#170a14)">
+        <span>ETERNAL<br>FLAME</span>
+      </div>
+      <div class="card-info">
+        <h3>Eternal Flame</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Midnight Dream" data-category="Dark">
+      <div class="art" style="--bg:linear-gradient(145deg,#090d23,#344d76,#101329)">
+        <span>MIDNIGHT<br>DREAM</span>
+      </div>
+      <div class="card-info">
+        <h3>Midnight Dream</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Spirit Garden" data-category="Nature">
+      <div class="art" style="--bg:linear-gradient(145deg,#102d2c,#397c67,#142137)">
+        <span>SPIRIT<br>GARDEN</span>
+      </div>
+      <div class="card-info">
+        <h3>Spirit Garden</h3>
+        <p>Original Anime Art · 4K</p>
+        <div class="actions">
+          <button class="preview" onclick="showPreview(this)">Preview</button>
+          <button class="download" onclick="saveArt(this)">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="empty" id="empty">
+      No wallpapers found. Try another search.
+    </div>
+
+  </div>
+</main>
+
+<div class="modal" id="modal" onclick="closeOutside(event)">
+  <div class="modal-content">
+    <div class="modal-art" id="modalArt">Wallpaper Preview</div>
+    <h2 id="modalTitle">Wallpaper</h2>
+    <p style="color:#999;margin-top:8px">Anime Motion 4K</p>
+    <button onclick="closePreview()">Close Preview</button>
+  </div>
+</div>
+
+<footer>
+  <strong>ANIME MOTION 4K</strong><br>
+  A world beyond imagination.<br>
+  © 2026 Anime Motion 4K
+</footer>
+
 <script>
-(()=>{const $=id=>document.getElementById(id);let wallpapers=[],activeCat='All Anime',query='',toastTimer;const panel=$('uploadPanel'),grid=$('grid');function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2800)}function openUpload(){panel.classList.add('open');panel.scrollIntoView({behavior:'smooth',block:'center'})}$('openUpload').onclick=openUpload;$('heroUpload').onclick=openUpload;$('emptyUpload').onclick=openUpload;$('explore').onclick=()=>$('gallery').scrollIntoView({behavior:'smooth'});$('search').addEventListener('input',e=>{query=e.target.value.toLowerCase().trim();render()});$('chips').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;activeCat=b.dataset.cat;document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active',c===b));render()});function render(){const list=wallpapers.filter(w=>(activeCat==='All Anime'||w.cat===activeCat)&&(!query||(w.title+' '+w.cat).toLowerCase().includes(query)));$('wallCount').textContent=wallpapers.length;if(!list.length){grid.innerHTML=`<div class="empty"><div class="emptyicon">${wallpapers.length?'🔎':'🎞️'}</div><h3>${wallpapers.length?'No matching wallpapers':'Your motion gallery starts here'}</h3><p>${wallpapers.length?'Try another search or category.':'Add an MP4, WebM, or GIF file to create a real moving wallpaper card. Static images will not be presented as animation.'}</p><button class="btn" id="emptyUpload2">＋ Add a video</button></div>`;$('emptyUpload2').onclick=openUpload;return}grid.innerHTML='';list.forEach(w=>{const card=document.createElement('article');card.className='card';const preview=document.createElement('div');preview.className='preview';const video=document.createElement('video');video.src=w.url;video.muted=true;video.loop=true;video.autoplay=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-label',w.title+' animated preview');video.addEventListener('mouseenter',()=>video.play().catch(()=>{}));video.addEventListener('click',()=>showPreview(w));preview.append(video);const tag=document.createElement('span');tag.className='tag';tag.textContent=w.cat.toUpperCase();preview.append(tag);const q=document.createElement('span');q.className='quality';q.textContent=w.ext.toUpperCase();preview.append(q);const body=document.createElement('div');body.className='cardbody';const title=document.createElement('div');title.className='cardtitle';title.textContent=w.title;const meta=document.createElement('div');meta.className='meta';meta.textContent='Animated video · '+sizeLabel(w.size);const actions=document.createElement('div');actions.className='cardactions';const dl=document.createElement('button');dl.className='download';dl.textContent='↓ Download';dl.onclick=()=>{const a=document.createElement('a');a.href=w.url;a.download=w.filename;document.body.append(a);a.click();a.remove();toast('Download started. Set the video with a compatible live-wallpaper app.')};const pv=document.createElement('button');pv.className='remove';pv.textContent='▶ Preview';pv.onclick=()=>showPreview(w);const rm=document.createElement('button');rm.className='remove';rm.textContent='Remove';rm.onclick=()=>{URL.revokeObjectURL(w.url);wallpapers=wallpapers.filter(x=>x.id!==w.id);render();toast('Wallpaper removed from this session.')};actions.append(dl,pv,rm);body.append(title,meta,actions);card.append(preview,body);grid.append(card)})}function sizeLabel(n){return n<1024*1024?(n/1024).toFixed(0)+' KB':(n/1024/1024).toFixed(1)+' MB'}function showPreview(w){$('modalTitle').textContent=w.title;$('modalVideo').src=w.url;$('modal').classList.add('open');$('modalVideo').play().catch(()=>{})}function closePreview(){$('modalVideo').pause();$('modalVideo').removeAttribute('src');$('modalVideo').load();$('modal').classList.remove('open')}$('closeModal').onclick=closePreview;$('modal').addEventListener('click',e=>{if(e.target===$('modal'))closePreview()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closePreview()});$('uploadForm').addEventListener('submit',e=>{e.preventDefault();const file=$('wallFile').files[0];if(!file)return;const ext=(file.name.split('.').pop()||'mp4').toLowerCase();if(!['mp4','webm','mov','gif'].includes(ext)){toast('Choose an MP4, WebM, MOV, or GIF file.');return}if(file.size>250*1024*1024){toast('For this demo, choose a file smaller than 250 MB.');return}const item={id:Date.now()+Math.random(),title:$('wallTitle').value.trim(),cat:$('wallAnime').value,url:URL.createObjectURL(file),filename:file.name,ext,size:file.size};wallpapers.unshift(item);activeCat='All Anime';document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active',c.dataset.cat===activeCat));query='';$('search').value='';$('uploadForm').reset();panel.classList.remove('open');render();toast('Added! Your actual animated file is ready to preview.');$('gallery').scrollIntoView({behavior:'smooth'})});window.addEventListener('beforeunload',()=>wallpapers.forEach(w=>URL.revokeObjectURL(w.url)));render()})();
-</script></body></html>
+let currentCategory = "All";
+
+const search = document.getElementById("search");
+const cards = [...document.querySelectorAll(".card")];
+
+function updateGallery() {
+  const query = search.value.toLowerCase();
+  let visible = 0;
+
+  cards.forEach(card => {
+    const matchesName = card.dataset.name.toLowerCase().includes(query);
+    const matchesCategory = currentCategory === "All" ||
+      card.dataset.category === currentCategory;
+
+    card.style.display = matchesName && matchesCategory ? "" : "none";
+
+    if (matchesName && matchesCategory) visible++;
+  });
+
+  document.getElementById("empty").style.display =
+    visible ? "none" : "block";
+}
+
+search.addEventListener("input", updateGallery);
+
+function filter(category, button) {
+  currentCategory = category;
+
+  document.querySelectorAll(".categories button").forEach(btn =>
+    btn.classList.remove("active")
+  );
+
+  button.classList.add("active");
+  updateGallery();
+}
+
+function showPreview(button) {
+  const card = button.closest(".card");
+  const art = card.querySelector(".art");
+
+  document.getElementById("modalTitle").textContent =
+    card.dataset.name;
+
+  const modalArt = document.getElementById("modalArt");
+  modalArt.textContent = art.innerText;
+  modalArt.style.background = getComputedStyle(art).background;
+
+  document.getElementById("modal").style.display = "flex";
+}
+
+function closePreview() {
+  document.getElementById("modal").style.display = "none";
+}
+
+function closeOutside(event) {
+  if (event.target.id === "modal") closePreview();
+}
+
+function saveArt(button) {
+  const card = button.closest(".card");
+  const art = card.querySelector(".art");
+  const bg = getComputedStyle(art).background;
+
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="1080" height="1920">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#17132d"/>
+        <stop offset="100%" stop-color="#503a80"/>
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#g)"/>
+    <circle cx="540" cy="700" r="260" fill="#ffffff"
+            opacity=".09"/>
+    <text x="540" y="950" text-anchor="middle"
+      font-size="95" fill="white"
+      font-family="Arial" font-weight="bold">
+      ${card.dataset.name}
+    </text>
+    <text x="540" y="1050" text-anchor="middle"
+      font-size="35" fill="#c6b4ff"
+      font-family="Arial">
+      ANIME MOTION 4K
+    </text>
+  </svg>`;
+
+  const blob = new Blob([svg], {type:"image/svg+xml"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+
+  a.href = url;
+  a.download = card.dataset.name.replaceAll(" ","-") + ".svg";
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
